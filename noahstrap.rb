@@ -5,9 +5,9 @@
 class Noahstrap < Formula
   desc ""
   homepage ""
-  url "https://github.com/linux-noah/noahstrap/archive/0.0.2.tar.gz"
-  version "0.0.2"
-  sha256 "a70db763ad0b9c8901d3641bb674b3c9a27f866d498cead434629f233da88035"
+  url "https://github.com/linux-noah/noahstrap/archive/0.0.4.tar.gz"
+  version "0.0.4"
+  sha256 "c0a39e541abae145f995a56e9a0aee120b9ddc75bc764c81d7c5b412b9206303"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
