@@ -7,7 +7,7 @@ class Noah < Formula
   homepage ""
   url "https://github.com/linux-noah/noah/archive/0.2.5.tar.gz"
   version "0.2.5"
-  sha256 "a009e1988f147f1fc245cc4b9525fb6cbc9fbe9ccee31a1f3928d5407dd14d09"
+  sha256 "5e97eac031e3504d7f38cac390bce2ed3ea6bf2653a023a3e957236094816dfb"
 
   # depends_on "cmake" => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
