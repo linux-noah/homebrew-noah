@@ -5,9 +5,9 @@
 class Noah < Formula
   desc ""
   homepage ""
-  url "https://github.com/linux-noah/noah/archive/0.2.5.tar.gz"
-  version "0.2.5"
-  sha256 "5e97eac031e3504d7f38cac390bce2ed3ea6bf2653a023a3e957236094816dfb"
+  url "https://github.com/linux-noah/noah/archive/0.2.6.tar.gz"
+  version "0.2.6"
+  sha256 "d13ef315757fee64e9f31eb35be071f8627db484ad08122163fab4a3332f8bfc"
 
   # depends_on "cmake" => :build
   #depends_on :x11 # if your formula requires any X11/XQuartz components
