@@ -9,8 +9,7 @@ class Noah < Formula
   version "0.2.6"
   sha256 "d13ef315757fee64e9f31eb35be071f8627db484ad08122163fab4a3332f8bfc"
 
-  # depends_on "cmake" => :build
-  #depends_on :x11 # if your formula requires any X11/XQuartz components
+  depends_on "noahstrap"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
