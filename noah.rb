@@ -15,7 +15,8 @@ class Noah < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
 
     system "make"
-    bin.install "build/noah"
+    bin.install "bin/noah"
+    libexec.install "libexec/noah"
   end
 
   test do
