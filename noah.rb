@@ -22,6 +22,10 @@ class Noah < Formula
 
         sudo chown root:admin #{libexec}/noah
         sudo chmod u+s #{libexec}/noah
+
+     #{noah} only uses superuser priviledges for handling setuid requests from
+     linux processes and drop them off most of the running time, so it should
+     be safe to add the setuid bit.
     EOS
     s
   end
