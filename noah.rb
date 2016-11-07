@@ -31,6 +31,7 @@ class Noah < Formula
   end
 
   test do
-    system "false"
+    system "#{bin}/noah", "--version"
+    assert_match /Usage/, shell_output("#{bin}/noah --help", 1)
   end
 end
