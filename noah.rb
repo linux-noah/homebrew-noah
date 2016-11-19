@@ -5,29 +5,14 @@ class Noah < Formula
   version "0.3.9"
   sha256 "36966251e6dc6768c6efdf3a98a3f6af4efd0d4ec3b7f9097cdee876a307c044"
 
+  depends_on "cmake" => :bulid
+
   depends_on "noahstrap"
 
   def install
+    system "cmake", *std_cmake_args
     system "make"
-
-    bin.install "bin/noah"
-    libexec.install "libexec/noah"
-  end
-
-  def caveats
-    s = <<-EOS.undent
-      To allow the sudo command to run inside the linux land, #{name} requires
-      superuser priviledges. You must change the ownership of the binary
-      and add the setuid bit.
-
-        sudo chown root:admin #{libexec}/noah
-        sudo chmod u+s #{libexec}/noah
-
-      #{name} only uses superuser priviledges for handling setuid requests from
-      linux processes and drop them off most of the running time, so it should
-      be safe to add the setuid bit.
-    EOS
-    s
+    system "make", "install"
   end
 
   test do
