@@ -1,9 +1,9 @@
 class Noah < Formula
   desc "Darwin subsystem for Linux (Bash on macOS)"
   homepage "http://github.com/linux-noah/noah"
-  url "https://github.com/linux-noah/noah/archive/0.3.0.tar.gz"
-  version "0.3.0"
-  sha256 "fa026e86ede1d3fcdb395afc89c5a53cefa5db952aa3c751805a6918ae6c5330"
+  url "https://github.com/linux-noah/noah/archive/0.3.9.tar.gz"
+  version "0.3.9"
+  sha256 "36966251e6dc6768c6efdf3a98a3f6af4efd0d4ec3b7f9097cdee876a307c044"
 
   depends_on "noahstrap"
 
