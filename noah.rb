@@ -5,13 +5,12 @@ class Noah < Formula
   version "0.3.9"
   sha256 "36966251e6dc6768c6efdf3a98a3f6af4efd0d4ec3b7f9097cdee876a307c044"
 
-  depends_on "noahstrap" => :run
-  depends_on "cmake" => :bulid
+  depends_on "noahstrap"
+  depends_on "cmake"
 
   def install
-    mkdir "build" do
-      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
-      system "make"
+    mkdir "bulid" do
+      system "cmake", "..", *std_cmake_args
       system "make", "install"
     end
   end
