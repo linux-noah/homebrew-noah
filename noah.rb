@@ -9,9 +9,11 @@ class Noah < Formula
   depends_on "cmake" => :bulid
 
   def install
-    system "cmake", ".", *std_cmake_args
-    system "make"
-    system "make", "install"
+    mkdir "build" do
+      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+      system "make"
+      system "make", "install"
+    end
   end
 
   test do
