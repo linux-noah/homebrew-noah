@@ -5,9 +5,9 @@
 class Noahstrap < Formula
   desc ""
   homepage ""
-  url "https://github.com/linux-noah/noahstrap/archive/0.1.2.tar.gz"
-  version "0.1.2"
-  sha256 "cc9ebf8576949e8a8f84c083cfd81eeffc914f3eabe4961a44a0326c56c70b0f"
+  url "https://github.com/linux-noah/noahstrap/archive/0.1.3.tar.gz"
+  version "0.1.3"
+  sha256 "0a7fab227d72f01bda8dc0b7874ec9fd237fff40534b2dc3cc9c7d92a1d3d938"
 
   depends_on "pv"
   depends_on "gnu-tar"
