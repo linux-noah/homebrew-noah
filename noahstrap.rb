@@ -10,6 +10,7 @@ class Noahstrap < Formula
   sha256 "cc9ebf8576949e8a8f84c083cfd81eeffc914f3eabe4961a44a0326c56c70b0f"
 
   depends_on "pv"
+  depends_on "gnu-tar"
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
