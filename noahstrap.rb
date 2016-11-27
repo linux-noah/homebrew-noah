@@ -7,7 +7,7 @@ class Noahstrap < Formula
   homepage ""
   url "https://github.com/linux-noah/noahstrap/archive/0.1.2.tar.gz"
   version "0.1.2"
-  sha256 "408b8edc2cfdf271746ed2b1e0cea1cf5477ada709b25e44191abc151dd85df7"
+  sha256 "cc9ebf8576949e8a8f84c083cfd81eeffc914f3eabe4961a44a0326c56c70b0f"
 
   depends_on "pv"
 
