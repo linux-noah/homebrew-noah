@@ -9,6 +9,8 @@ class Noahstrap < Formula
   version "0.1.0"
   sha256 "54941ec78c1d256bf1faca84d3a0a066d9a0f010ed0d5b78cbf159933f583111"
 
+  depends_on "pv"
+
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
 
