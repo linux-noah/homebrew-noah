@@ -3,7 +3,7 @@ class Noah < Formula
   homepage "http://github.com/linux-noah/noah"
   url "https://github.com/linux-noah/noah/archive/0.5.0.tar.gz"
   version "0.5.0"
-  sha256 "8a4d1b4effc3cd9b7a787bbe5e4ecc28b4f4fe629fcccb72b339e2e9e14b1607"
+  sha256 "c149f649a9424d5baaa42cfd48308e34f036f613693efc8a68d1ffc2893f2ce2"
 
   depends_on "noahstrap"
   depends_on "cmake"
