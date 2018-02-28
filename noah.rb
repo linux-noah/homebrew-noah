@@ -14,6 +14,8 @@ class Noah < Formula
   depends_on "noahstrap"
   depends_on "cmake" => :build
 
+  depends_on :macos => :sierra # needs clock_gettime
+
   def install
     mkdir "bulid" do
       system "cmake", "..", *std_cmake_args
