@@ -6,15 +6,13 @@ class Noah < Formula
   head "https://github.com/linux-noah/noah.git"
 
   bottle do
-    cellar :any_skip_relocation
     root_url "https://dl.bintray.com/linux-noah/noah"
-    sha256 "c59bb163848832f921fcc8124345ab9a8f85b807944161ee94b8cc673006756a" => :sierra
+    sha256 cellar: :any_skip_relocation, sierra: "c59bb163848832f921fcc8124345ab9a8f85b807944161ee94b8cc673006756a"
   end
 
-  depends_on "noahstrap"
   depends_on "cmake" => :build
-
-  depends_on :macos => :sierra # needs clock_gettime
+  depends_on macos: :sierra
+  depends_on "noahstrap" # needs clock_gettime
 
   def install
     mkdir "bulid" do
@@ -25,6 +23,6 @@ class Noah < Formula
 
   test do
     system "#{bin}/noah", "--version"
-    assert_match /Usage/, shell_output("#{bin}/noah --help", 1)
+    assert_match(/Usage/, shell_output("#{bin}/noah --help", 1))
   end
 end
